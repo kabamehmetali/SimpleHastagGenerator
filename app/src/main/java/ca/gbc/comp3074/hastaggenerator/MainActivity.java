@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     private String generateHashtags(String prompt, int numberOfHashtags) {
         OkHttpClient client = new OkHttpClient();
 
-        String fullPrompt = "Generate " + numberOfHashtags + " relevant hashtags for: \"" + prompt + "\" in turkish ";
+        String fullPrompt = "Generate " + numberOfHashtags + " relevant hashtags for: \"" + prompt + "\" in English ";
 
         JSONObject jsonBody = new JSONObject();
         try {
