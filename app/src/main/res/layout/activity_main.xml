@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <!-- Prompt Input -->
+    <EditText
+        android:id="@+id/promptEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter a description"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!-- Number of Hashtags Input -->
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Number of hashtags"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <!-- Generate Button -->
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <!-- Scrollable Hashtags Display -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/hashtagsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="16dp"
+            android:text="Generated hashtags will appear here"
+            android:textAlignment="textStart"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <!-- Copy Button -->
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Copy Hashtags" />
+
+</LinearLayout>
