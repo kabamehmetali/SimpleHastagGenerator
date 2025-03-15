@@ -17,7 +17,7 @@ It uses OpenAI's GPT-3.5 API to generate hashtags dynamically.
 ![Home Screen](/Screenshot01.png)
 
 ### Generated Hashtags
-![Generated Hashtags](images/screenshot02.png)
+![Generated Hashtags](images/Screenshot02.png)
 
 ## Setup and Installation
 
